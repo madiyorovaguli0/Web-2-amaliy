@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bilim Ziyo o‘quv markaziga kursga yozilish va bog‘lanish formasi.">
+    <title>Aloqa va ro‘yxatdan o‘tish — Bilim Ziyo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="yuqori">
+    <header class="site-header">
+        <p class="brand-mark">BZ</p>
+        <h1>Aloqa va ro‘yxatdan o‘tish</h1>
+        <p class="tagline">Birinchi qadamni bugun boshlang!</p>
+        <p>Quyidagi formani to‘ldirib, o‘zingizga mos kurs haqida so‘rov yuboring.</p>
+    </header>
+    <nav class="site-nav" aria-label="Asosiy navigatsiya">
+        <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="batafsil.html">Kurslar haqida</a></li>
+            <li><a href="index.html#kurslar">Kurslar</a></li>
+            <li><a href="aloqa.html" aria-current="page">Aloqa</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="form-section">
+            <h2>Kursga yozilish formasi</h2>
+            <p>Barcha yulduzcha bilan belgilangan maydonlarni to‘ldiring. Ushbu amaliy ish formasining namuna ekanini unutmang; serverga yuborish funksiyasi alohida sozlanadi.</p>
+            <form action="#natija" method="post">
+                <div class="form-field"><label for="ism">Ism-familiya *</label><input id="ism" name="ism" type="text" autocomplete="name" placeholder="Masalan, Ali Valiyev" required></div>
+                <div class="form-field"><label for="email">Elektron pochta *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="ali@example.com" required></div>
+                <div class="form-field"><label for="telefon">Telefon raqami *</label><input id="telefon" name="telefon" type="tel" placeholder="+998901234567" pattern="\+998[0-9]{9}" title="Telefonni +998XXXXXXXXX shaklida kiriting" required></div>
+                <div class="form-field"><label for="yosh">Yosh</label><input id="yosh" name="yosh" type="number" min="7" max="100" placeholder="Masalan, 18"></div>
+                <div class="form-field"><label for="sana">Qulay boshlash sanasi</label><input id="sana" name="sana" type="date"></div>
+                <div class="form-field"><label for="kurs">Tanlangan kurs *</label><select id="kurs" name="kurs" required><option value="">Kursni tanlang</option><option value="ingliz">Ingliz tili</option><option value="matematika">Matematika</option><option value="veb">Veb-dasturlash</option><option value="kompyuter">Kompyuter savodxonligi</option><option value="rus">Rus tili</option></select></div>
+                <fieldset class="form-field"><legend>Dars shaklini tanlang *</legend><label class="choice"><input type="radio" name="dars_shakli" value="guruh" required> Guruh bilan</label><label class="choice"><input type="radio" name="dars_shakli" value="individual"> Individual</label></fieldset>
+                <div class="form-field"><label for="vaqt">Qulay dars vaqti</label><select id="vaqt" name="vaqt"><option value="">Vaqtni tanlang</option><option value="ertalab">Ertalab</option><option value="tushdan-keyin">Tushdan keyin</option><option value="kechqurun">Kechqurun</option></select></div>
+                <div class="form-field"><label for="xabar">Qo‘shimcha savol yoki izoh</label><textarea id="xabar" name="xabar" rows="5" placeholder="Kurs haqida bilmoqchi bo‘lgan savolingizni yozing"></textarea></div>
+                <div class="form-field checkbox-field"><label class="choice" for="rozilik"><input id="rozilik" name="rozilik" type="checkbox" required> Kiritilgan ma’lumotlar to‘g‘riligini tasdiqlayman. *</label></div>
+                <button type="submit">So‘rov yuborish</button>
+            </form>
+            <p id="natija" class="izoh">Eslatma: bu statik HTML namuna. Haqiqiy so‘rovlarni qabul qilish uchun server tomoni kerak bo‘ladi.</p>
+        </section>
+        <aside class="notice"><h2>Bog‘lanish</h2><p>Email: <a href="mailto:info@example.com">info@example.com</a></p><p>Telefon: <a href="tel:+998901234567">+998 90 123 45 67</a></p><p class="izoh">Bu aloqa ma’lumotlari namuna sifatida keltirilgan.</p></aside>
+        <p class="back-top"><a href="#yuqori">↑ Sahifa yuqorisiga qaytish</a></p>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><div><strong>Bilim Ziyo</strong><p>Bilim bilan kelajak sari!</p></div><div><strong>Tezkor havolalar</strong><p><a href="index.html">Bosh sahifa</a> · <a href="batafsil.html">Kurslar</a> · <a href="aloqa.html">Aloqa</a></p></div></div><p class="copyright">&copy; 2026 Bilim Ziyo o‘quv markazi. Barcha huquqlar himoyalangan.</p></footer>
+</body>
+</html>

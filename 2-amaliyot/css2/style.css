@@ -1,0 +1,92 @@
+/* Bilim Ziyo — 2-amaliy ish */
+:root {
+    --asosiy: #1f3a5f;
+    --ikkilamchi: #2f6690;
+    --urg-u: #f2b84b;
+    --fon: #f4f7fb;
+    --matn: #253041;
+    --oq: #ffffff;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: "Roboto", Arial, sans-serif; font-size: 16px; line-height: 1.7; color: var(--matn); background: var(--fon); }
+img, iframe { max-width: 100%; }
+img { display: block; width: 100%; height: auto; }
+h1 { margin: .25em 0; color: white; font-size: 2.2rem; font-weight: 700; text-align: center; text-transform: uppercase; letter-spacing: 1.5px; }
+h2, h3 { color: var(--asosiy); line-height: 1.3; }
+h2 { font-size: 1.65rem; } h3 { font-size: 1.2rem; }
+p { font-size: 1rem; }
+.site-header { padding: 2rem 1.25rem; color: white; text-align: center; background: var(--asosiy); }
+.site-header h1 { max-width: 1000px; margin-left: auto; margin-right: auto; }
+.site-header p { max-width: 760px; margin: .5rem auto; }
+.brand-mark { display: inline-block; margin: 0 auto .5rem; padding: .2rem .8rem; border: 2px solid white; border-radius: 10px; font-size: 1.2rem; font-weight: 700; letter-spacing: 2px; }
+.tagline { color: var(--urg-u); font-size: 1.2rem; font-weight: 700; }
+/* Menyu ekranning yuqorisida qoladi */
+.site-nav { position: sticky; top: 0; z-index: 100; background: var(--ikkilamchi); }
+.site-nav ul { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .5rem 1.5rem; max-width: 1100px; margin: 0 auto; padding: .8rem 1rem; list-style: none; }
+.site-nav a { color: white; font-weight: 700; text-decoration: none; }
+.site-nav a:visited { color: white; }
+.site-nav a:hover { color: var(--urg-u); text-decoration: underline; }
+.site-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 5px; }
+main { width: min(100% - 2rem, 1000px); margin: 2rem auto; padding: 0 .25rem; }
+section, .notice { margin: 0 0 1.5rem; padding: 1.25rem 1.5rem; border: 1px solid #dce4ed; border-radius: 12px; background: white; box-shadow: 0 3px 12px rgb(31 58 95 / 6%); }
+.intro { border-top: 5px solid var(--ikkilamchi); }
+.course-list li { margin-bottom: .5rem; }
+.izoh { color: #526174; font-size: .92rem; font-style: italic; }
+mark { padding: .1rem .25rem; color: #253041; background: var(--urg-u); }
+blockquote { margin: 1.25rem 0; padding: .75rem 1rem; border-left: 4px solid var(--urg-u); color: var(--asosiy); background: #f4f7fb; font-style: italic; }
+dt { margin-top: .8rem; color: var(--asosiy); font-weight: 700; } dd { margin-left: 1.25rem; }
+a { color: #245b85; text-underline-offset: 3px; } a:visited { color: #684a8c; } a:hover { color: #b45309; text-decoration-thickness: 2px; }
+.more-link { font-weight: 700; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: white; }
+caption { padding: .6rem; color: var(--asosiy); font-weight: 700; text-align: left; }
+th, td { padding: .7rem; border: 1px solid #cbd5e1; text-align: left; }
+thead { color: white; background: var(--ikkilamchi); }
+thead th { color: white; }
+tbody tr:nth-child(even) { background: #f4f7fb; }
+.media-row { display: flex; flex-wrap: wrap; gap: 1rem; }
+.media-row figure { flex: 1 1 280px; margin: 0; overflow: hidden; border-radius: 10px; background: #f4f7fb; }
+.media-row img { height: 210px; object-fit: cover; }
+figcaption { padding: .6rem .8rem; }
+.video-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; background: #15283e; }
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.notice { border-left: 5px solid var(--urg-u); }
+.course-cards { display: flex; flex-wrap: wrap; gap: 1rem; }
+.course-cards > h2 { flex-basis: 100%; }
+.course-card { position: relative; flex: 1 1 280px; min-width: 0; padding: 1rem; border: 1px solid #dce4ed; border-radius: 10px; background: #fff; }
+.badge-new { position: absolute; top: .7rem; right: .7rem; padding: .15rem .55rem; border-radius: 5px; color: #253041; background: var(--urg-u); font-size: .8rem; font-weight: 700; }
+.author-box { border: 2px solid var(--ikkilamchi); }
+#aloqa { border-left: 5px solid var(--ikkilamchi); }
+.form-section form { display: flex; flex-direction: column; gap: 1rem; }
+.form-field { display: flex; flex-direction: column; gap: .35rem; margin: 0; }
+.form-field label, legend { color: var(--asosiy); font-weight: 700; }
+input, select, textarea { width: 100%; min-width: 0; padding: .7rem .8rem; border: 1px solid #aab8c8; border-radius: 7px; color: var(--matn); background: white; font: inherit; }
+input:focus, select:focus, textarea:focus { outline: 3px solid rgb(47 102 144 / 22%); border-color: var(--ikkilamchi); }
+fieldset.form-field { padding: .8rem; border: 1px solid #cbd5e1; border-radius: 8px; }
+.choice { display: flex; align-items: center; gap: .55rem; font-weight: 400 !important; }
+.choice input { width: auto; }
+.checkbox-field { margin-top: .2rem; }
+button, .button-link { display: inline-flex; justify-content: center; align-items: center; gap: .5rem; width: fit-content; max-width: 100%; padding: .75rem 1.2rem; border: 0; border-radius: 8px; color: white; background: var(--ikkilamchi); font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+button:hover, .button-link:hover { color: var(--asosiy); background: var(--urg-u); }
+.back-top { position: fixed; right: 1rem; bottom: 1rem; z-index: 50; margin: 0; }
+.back-top a { display: inline-block; padding: .5rem .75rem; border-radius: 8px; color: white; background: var(--asosiy); text-decoration: none; box-shadow: 0 2px 8px rgb(0 0 0 / 18%); }
+.back-top a:hover { color: var(--asosiy); background: var(--urg-u); }
+.site-footer { padding: 1.25rem; color: white; background: var(--asosiy); }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2rem; max-width: 1000px; margin: 0 auto; }
+.footer-inner > div { flex: 1 1 250px; }
+.footer-inner p { margin: .25rem 0; }
+.site-footer a, .site-footer a:visited { color: white; }
+.site-footer a:hover { color: var(--urg-u); }
+.copyright { margin: 1rem 0 0; padding-top: .75rem; border-top: 1px solid rgb(255 255 255 / 25%); font-size: .9rem; text-align: center; }
+/* Ekran torayganda kontent moslashadi */
+@media (max-width: 600px) {
+    h1 { font-size: 1.65rem; }
+    main { width: min(100% - 1rem, 1000px); margin: 1rem auto; padding: 0; }
+    section, .notice { padding: 1rem; }
+    .site-nav ul { justify-content: center; gap: .5rem 1rem; }
+    .media-row img { height: 180px; }
+    .back-top { right: .5rem; bottom: .5rem; }
+    .back-top a { padding: .4rem .55rem; font-size: .85rem; }
+    th, td { padding: .5rem; }
+}
